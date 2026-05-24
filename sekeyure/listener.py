@@ -22,7 +22,7 @@ class Listener:
         if self.listener:
             self.listener.stop()
         
-        print({
+        return({
             "events": self.events,
             "final_length": self.position,
             "backspace_count": len(self.backspacepositions)
@@ -64,8 +64,8 @@ class Listener:
 
 
 
-l=Listener()
-print("Start typing...")
-l.start()
-time.sleep(8)
-l.stop()
+# l=Listener()
+# print("Start typing...")
+# l.start()
+# time.sleep(8)
+# l.stop()
