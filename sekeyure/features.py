@@ -7,7 +7,7 @@ class FeatureExtractor:
         pass  # no length needed at construction
 
     def extract(self, raw_strokes: dict) -> dict:
-        # Length is derived from what was actually captured
+       
         N = raw_strokes['final_length']
 
         if N < 4:
